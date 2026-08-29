@@ -2,12 +2,12 @@
   width: 200 px;
 } */
 body {
-  background-color: lightblue;
+  background-color: pink;
   /* text-align: center;
   font-family: 'Arial'; */
 }
 h1 {
   font-family: verdana;
   color: yellow;
-  -webkit-text-stroke: 1px pink; /* Thickness and color of outline */
+  -webkit-text-stroke: 1px lightblue; /* Thickness and color of outline */
 }
