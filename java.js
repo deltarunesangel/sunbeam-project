@@ -1,11 +1,11 @@
 const musica = document.getElementById("please-work");
-const guestbookvis = document.getElementById("guestbook-screen");
-const supabaseKey = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im50amVremRvamR6cndqbWx5aGNkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODA4NTY2NTUsImV4cCI6MjA5NjQzMjY1NX0.jSOz_CQ_F2S0SUSpyCdOEZqXg8hB0IF5RQs0mV-xkZg";
-const supabaseUrl = "https://ntjekzdojdzrwjmlyhcd.supabase.co";
+const commentsvis = document.getElementById("comments-screen");
+const supabaseKey = "sb_publishable_5l2itKf_AQb8ZRAt7mwJdQ_iiRhYyS_";
+const supabaseUrl = "https://knscogotkmdypzlhehov.supabase.co";
 const yipee = supabase.createClient(supabaseUrl, supabaseKey);
-const guestbookNameInput = document.getElementById("guestbook-name");
-const guestbookMessageInput = document.getElementById("guestbook-message");
-const guestbookSubmitButton = document.getElementById("guestbook-submit");
+const commentsNameInput = document.getElementById("comments-name");
+const commentsMessageInput = document.getElementById("comments-message");
+const commentsSubmitButton = document.getElementById("comments-submit");
 const commentsStream = document.getElementById("comments-stream");
 // window.addEventListener('click' function() {
 //     if(sanctuary===false){
@@ -21,18 +21,18 @@ function vibin(videoId){
         args:[videoId]
     }), '*');
 }
-guestbookbtn.addEventListener('click', function () {
+commentsbtn.addEventListener('click', function () {
     homevis.style.display = "none"
     aboutvis.style.display = "none"
     projectsvis.style.display = "none"
     aspvis.style.display = "none"
-    guestbookvis.style.display = "block"
+    commentsvis.style.display = "block"
     vibin("4s0VBDxeEXY")
     //musica.src = "https://www.youtube.com/embed/4s0VBDxeEXY?enablejsapi=1&autoplay=1&loop=1&playlist=4s0VBDxeEXY";
 })
 async function fetchComments() {
     const { data, error } = await yipee
-        .from('guestbook')
+        .from('comments')
         .select('*')
         .order('created_at', { ascending: false });
     if (error) {
@@ -50,27 +50,27 @@ async function fetchComments() {
         commentsStream.appendChild(commentDiv);
     });
 }
-guestbookSubmitButton.addEventListener('click', async function () {
-    const name = guestbookNameInput.value.trim();
-    const message = guestbookMessageInput.value.trim();
+commentsSubmitButton.addEventListener('click', async function () {
+    const name = commentsNameInput.value.trim();
+    const message = commentsMessageInput.value.trim();
     if (name === "" || message === "") {
         alert("Please enter both your name and a message.");
         return;
     }
     const { error } = await yipee
-        .from('guestbook')
+        .from('comments')
         .insert([{ name: name, message: message }]);
     if (error) {
         alert("The cloud doesn't want to work right now, try again later :P");
         console.error("Error submitting comment:", error);
     } else {
-        guestbookNameInput.value = "";
-        guestbookMessageInput.value = "";
+        commentsNameInput.value = "";
+        commentsMessageInput.value = "";
     }
 });
 yipee
     .channel('schema-db-changes')
-    .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'guestbook' }, (payload) => {
+    .on('postgres_changes', { event: 'INSERT', schema: 'public', table: 'comments' }, (payload) => {
         fetchComments();
     })
     .subscribe();
