@@ -9,8 +9,8 @@ h1 {
   -webkit-text-stroke: 1px lightpink;
 }
 p {
-  font-family: "Happy Monkey";
+  font-family: "Happy Monkey", system-ui;
 }
 a { 
-  font-family: "Happy Monkey";
+  font-family: "Happy Monkey", system-ui;
 }
