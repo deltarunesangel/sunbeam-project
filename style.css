@@ -1,3 +1,9 @@
+.happy-monkey-regular {
+  font-family: "Happy Monkey", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 /* img {
   width: 200 px;
 } */
@@ -10,4 +16,7 @@ h1 {
   font-family: verdana;
   color: yellow;
   -webkit-text-stroke: 1px lightblue; /* Thickness and color of outline */
+}
+p {
+  font-family: "Happy Monkey"
 }
