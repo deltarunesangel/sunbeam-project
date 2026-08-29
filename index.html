@@ -1,210 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tropical Diary</title>
-    <style>
-        .container {
-            display: grid;
-            grid-template-areas:
-            "Stamps Stamps Stamps"
-            "header header header"
-            "locations article locations1"
-            "locations article locations1"
-            "locations article locations1"
-            ;
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tropical Diary</title>
+<style>
+h1 {
+text-align: center;
 
-            grid-template-columns: 1fr 2fr 1fr;
-            gap: 3px;
-            padding: 3px;
+}
+body {
+background-image: url("beach.png");
+background-repeat: no-repeat;
+background-size:cover;
+background-attachment: fixed;
+}
+article {
 
-        }
-        #stamps {
-            grid-area: Stamps;
-            width: 100px;
-            height:auto;
-            
-            background-color: rgba(128, 128, 128, 0.5);
-            line-height: 200%;
-            
-            flex-direction: row;
-            display: flex;
-            
-            border-radius: 10px;
-            text-align: center;
-            border-style: dashed;
-            border-width: 2px;
-            border-color: rgb(111, 190, 254);
-            
-        }
-        header {
-            
-            text-align: center;
-            grid-area:header;
-            
+z-index: 2;
+margin: 5%;
+background-color: rgba(128, 128, 128, 0.5);
+line-height: 200%;
+padding: 8px 8px 8px 8px;
 
-            
-            background-color: rgba(128, 128, 128, 0.5);
-            line-height: 200%;
-            
-
-        
-            border-radius: 10px;
-            text-align: center;
-            border-style: dashed;
-            border-width: 2px;
-            border-color: rgb(111, 190, 254);
-            
-        }
-        article {
-            grid-area:article;
-           
-            margin: 3%;
-            background-color: rgba(128, 128, 128, 0.5);
-            line-height: 200%;
-            
-
-        
-            border-radius: 10px;
-            text-align: center;
-            border-style: dashed;
-            border-width: 2px;
-            border-color: rgb(111, 190, 254);
-        }
-        .locations {
-            
-            text-align: center;
-            grid-area:locations;
-            
-
-            margin: 5%;
-            background-color: rgba(128, 128, 128, 0.5);
-            line-height: 200%;
-            
-
-        
-            border-radius: 10px;
-            text-align: center;
-            border-style: dashed;
-            border-width: 2px;
-            border-color: rgb(111, 190, 254);
-        }
-
-        .locations1 {
-            Grid-area:locations1;
-            text-align: center;
-           
-            
-
-            margin: 5%;
-            background-color: rgba(128, 128, 128, 0.5);
-            line-height: 200%;
-            
-
-        
-            border-radius: 10px;
-            text-align: center;
-            border-style: dashed;
-            border-width: 2px;
-            border-color: rgb(111, 190, 254);
-        }
-        
-        h1 {
-            text-align: center;
-            color: rgb(196, 207, 216);
-            
-        }
-
-        p {
-            color: rgb(237, 247, 255);
-        }
-        body {
-            background-image: url("beach.png");
-            background-repeat: no-repeat;
-            background-size:cover;
-            background-attachment: fixed;
-        }
-        
-
-        
-    </style>
+border-radius: 10px;
+text-align: center;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Summer Vacation</h1>
-        </header>
-    <div id = "stamps">
-        <img src = "stamp.png">
-        <img src = "stamp1.png">
-    </div>
-    <header><h1>Summer Vacation</h1></header>
-    <article>
-        <p>Don't know where to go on vacation this summer? Check out these amazing destinations! From Hawaii to Spain, there's somewhere for everyone. On this website we have several places where you can check out. You can see for yourself if you'd wanna spend your summer in one of these beautiful locations! Check out each of our featured spots to see what kind of vacation would be the best for you! From tropical beaches to historic cities, we've got you covered. We offer six locations, in Hawaii, Croatia, India, Spain, Japan, and CastleTown! All of these are unique and have their own kind of charm that will fit even anyone and everyone. Through here you can check out some of our favorite locations and go explore from there! Hope you have a great time!</p>
-        </article>
-   
-<div class = "locations">
-    
-    <p>Check out our featured locations below!</p>
-<hr>
- 
-
-<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fWaikiki%2bBeach,%2bHawaii%2f%4021.28018549,-157.83739743,3.84757032a,0d,60y,353.22222351h,108.5446974t,0r%2fdata%3dCoQBGlYSUAolMHg3YzAwNmRmNGU1YzEyOWFmOjB4NDYzM2RkYzUyYTY4ODg3OBkKQ4k7g0c1QCH-GlquiLpjwCoVV2Fpa2lraSBCZWFjaCwgSGF3YWlpGAEgASImCiQJlg0ZFNhRRUARD4CEmNFQRUAZq_G6uegiMkAhExhRuh0hMkBCAggBIhsKF0NJSE0wb2dLRUlDQWdJQ0VvYktNdXdFEAUyKQonCiUKITFBVzZkdS11aGRCTnhkeThXemRCal9MRnRYOEFxR3piZCABOgMKATBCAggASggI4f235AEQAQ">
-        <img src = "hawaii.png" style = "width: 200px; height: auto;" align = "center">
-    </a>
-
-<p>Waikiki Beach, Hawaii</p>
-
-<hr>
-  
-    <a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fDubrovnik,%2bCroatia%2f%4042.640187,-18.108905,1.479982a,0d,60y,0h,90t,0r%2fdata%3dCnQaSxJFCiUweDNiYmZiYTEwNjMzNmI3NDE6MHhlYWY4ODdmZjYyZjM0MDkyGfymsFJBmS5AIW0164zvh1JAKgpEdWJyb3ZuaWssIENyb2F0aWEYASABIiYKJQmKkHdhS5BQBHUmvTj7S1BQBntUmYMztxgQCFBAqiriNxgQEICCAEiIAoc₀lBQkloQWZadlFBSnZPLWZXdGdTT3ZkcEdtMxAFMikKJwolCiExQVc₂ZHUtdWhkQk5₄ZHk₄V₃pkQmpfTEZ₀WDhBcUd₆YmQgAToDCgEwQgIIAEoICO₉t-QBEAE">
-        <img src = "croatia.png" style = "width: 200px; height: auto;" align = "center">
-    </a>
-
-<p>Dubrovnik, Croatia</p>
-
-<hr>
-
-<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fGoa,%2bIndia%2f%408.07759421,77.55547083,30.38913921a,0d,60y,227.93056537h,102.34275191t,0r%2fdata%3dCnkaSxJFCiUweDNiYmZiYTEwNjMzNmI3NDE6MHhlYWY4ODdmZjYyZjM0MDkyGfymsFJBmS5AIW0164zvh1JAKgpHb2EsIEluZGlhGAEgASImCiQJmjqjlCSpRUARH6j-amyoRUAZO5ItrJSz_78hzTf0_NPZ_79CAggBIhoKFkNJSE0wb2dLRUlDQWdJRC1uSXJ1UXcQBTIpCicKJQohMUFXNmR1LXVoZEJOeGR5OFd6ZEJqX0xGdFg4QXFHemJkIAE6AwoBMEICCABKCAjh_bfkARAB">
-    <img src = "india.png" style = "width: 200px; height: auto;" align = "center">
-  </a>
-
-<p>Kanniyakumari view, India</p>
-
-<hr>
+<div id = "stamps">
 
 </div>
-<div class = "locations1">
-    <p>Check out our featured locations below!</p>
-
-
-
-    <a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fLa%2bKontxa,%2bSpain%2f%4043.31861878,-1.98601179,4.36803385a,0d,60y,30.7394133h,79.37515674t,0r%₂fdata%₃dCn4aUBJKCiQweGQ1MWJhYTkxODQ3YTM1MzoweDJjZGVmYzZkNzk3OGJlZjMZBP₂gMioRUAhgIUnT7TG_78qEExhIEtvbnR4YSwgU3BhaW4YASABIiYKJAmLKkHdhS5BQBHUmvTj7S1BQBntUmYMztxgQCFBAqiriNxgQEICCAEiIAoc₀lBQkloQWZadlFBSnZPLWZXdGdTT3ZkcEdtMxAFMikKJwolCiExQVc₂ZHUtdWhkQk5₄ZHk₄V₃pkQmpfTEZ₀WDhBcUd₆YmQgAToDCgEwQgIIAEoICO₉t-QBEAE">
-    <img src = "spain.png" style = "width: 200px; height: auto;" align = "center">
-  </a>
-
-    <p>La Kontxa, Spain</p>
-
-
-<hr>
-    
-    <a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fCastle%2bTown,%2bJapan%2f%4034.361">
-    <img src = "Japan.png" style = "width: 200px; height: auto;" align = "center">
-  </a>
-<p>Hyogo, Japan</p>
-<hr>
-  
-
-  
-  <a link href = "deltarunetommorrow.html">
-    <img src = "cat.png" style = "width: 200px; height: auto;" align = "center">
-  </a>
-  <p>Castle Town</p>
-
-<hr>
+<h1>Summer Vacation</h1>
+<article>
+<p>Don't know where to go on vacation this summer? Check out these amazing destinations! From Hawaii to Spain, there's somewhere for everyone. On this website we have several places where you can check out. You can see for yourself if you'd wanna spend your summer in one of these beautiful locations! Check out each of our featured spots to see what kind of vacation would be the best for you! From tropical beaches to historic cities, we've got you covered. We offer six locations, in Hawaii, Croatia, India, Spain, Japan, and CastleTown! All of these are unique and have their own kind of charm that will fit even anyone and everyone. Through here you can check out some of our favorite locations and go explore from there! Hope you have a great time!</p>
+<div id = "comments-screen"> 
+<input id = "comments-name" type = "text" placeholder = "Your name...">
+<textarea id="comments-message" placeholder="Your message"></textarea>
+<button id = "comments-submit">Submit!</button>
+<div id = "comments-stream"></div>
 </div>
-    
-    </div>
+
+<hr>
+
+<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fWaikiki%2bBeach,%2bHawaii%2f%4021.28018549,-157.83739743,3.84757032a,0d,60y,353.22222351h,108.5446974t,0r%2fdata%3dCoQBGlYSUAolMHg3YzAwNmRmNGU1YzEyOWFmOjB4NDYzM2RkYzUyYTY4ODg3OBkKQ4k7g0c1QCH-GlquiLpjwCoVV2Fpa2lraSBCZWFjaCwgSGF3YWlpGAEgASImCiQJlg0ZFNhRRUARD4CEmNFQRUAZq_G6uegiMkAhExhRuh0hMkBCAggBIhsKF0NJSE0wb2dLRUlDQWdJQ0VvYktNdXdFEAUyKQonCiUKITFBVzZkdS11aGRCTnhkeThXemRCal9MRnRYOEFxR3piZCABOgMKATBCAggASggI4f235AEQAQ">Waikiki Beach, Hawaii<a>
+
+<hr>
+
+<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fDubrovnik,%2bCroatia%2f%4042.63540153,18.13286191,99.762509a,0d,60y,255.2749100２h,9２.０９３９８２３７t,0r%２fdata%３dCoABGlISTAokMHgxMzRiOGJhMjA4MzVlODdkOjB4NDAwYWQ1MDg２MmJkNTAwGdrltthIU0VAIcv２fCgsGDJAKhJEdWJyb3ZuaWssIENyb２F0aWEYASABIiYKJAlfGumieykgQBG３EzE４-SUgQBnlxqttw２NTQCHPiEw９VmNTQEICCAEiGgoW０lITTBv０tFSUNB０lEcWpldTFRdxAFMikKJwolCiExQVc２ZHUtdWhkQk5４ZHk４V３pkQmpfTEZ０WDhBcUd６YmQgAToDCgEwQgIIAEoICO９t-QBEAE">Dubrovnik, Croatia<a>
+
+<hr>
+
+<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fGoa,%2bIndia%2f%408.07759421,77.55547083,30.38913921a,0d,60y,227.93056537h,102.34275191t,0r%2fdata%3dCnkaSxJFCiUweDNiYmZiYTEwNjMzNmI3NDE6MHhlYWY4ODdmZjYyZjM0MDkyGfymsFJBmS5AIW0164zvh1JAKgpHb2EsIEluZGlhGAEgASImCiQJmjqjlCSpRUARH6j-amyoRUAZO5ItrJSz_78hzTf0_NPZ_79CAggBIhoKFkNJSE0wb2dLRUlDQWdJRC1uSXJ1UXcQBTIpCicKJQohMUFXNmR1LXVoZEJOeGR5OFd6ZEJqX0xGdFg4QXFHemJkIAE6AwoBMEICCABKCAjh_bfkARAB">Kanniyakumari veiw, India<a>
+
+<hr>
+
+<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fLa%2bKontxa,%2bSpain%2f%4043.31861878,-1.98601179,4.36803385a,0d,60y,30.7394133h,79.37515674t,0r%₂fdata%₃dCn4aUBJKCiQweGQ1MWJhYTkxODQ3YTM1MzoweDJjZGVmYzZkNzk3OGJlZjMZBP₂gMioRUAhgIUnT7TG_78qEExhIEtvbnR4YSwgU3BhaW4YASABIiYKJAmLKkHdhS5BQBHUmvTj7S1BQBntUmYMztxgQCFBAqiriNxgQEICCAEiIAoc₀lBQkloQWZadlFBSnZPLWZXdGdTT3ZkcEdtMxAFMikKJwolCiExQVc₂ZHUtdWhkQk5₄ZHk₄V₃pkQmpfTEZ₀WDhBcUd₆YmQgAToDCgEwQgIIAEoICO₉t-QBEAE">La Kontxa, Spain<a>
+
+
+<hr>
+
+<a link href = "https://earth.app.goo.gl/?apn=com.google.earth&isi=293622097&ius=googleearth&link=https%3a%2f%2fearth.google.com%2fweb%2fsearch%2fTokyo,%2bJapan%2f%4034.36114132,134.89591793,12.93065353a,0d,60y,163.55050752h,85.05925896t,0r%2fdata%3dCiwiJgokCdTYnYsGqUVAEdHSanOKqEVAGTDoPn8otP-_Id0Mjj9A2f-_QgIIASIaChZuM3YwcGNoSC1iVDlQWFVRYlFmNVpBEAIyKQonCiUKITFBVzZkdS11aGRCTnhkeThXemRCal9MRnRYOEFxR3piZCABOgMKATBCAggASggI4f235AEQAQ">Hyogo, Japan<a>
+
+
+<hr>
+
+<a link href = "deltarunetommorrow.html">Castle Town</a>
+<hr>
+</article>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="your-script.js"></script>
+<script src="java.js"></script>
 </body>
 </html>
