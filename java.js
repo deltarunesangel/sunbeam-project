@@ -20,8 +20,7 @@ function vibin(videoId){
         func: 'loadVideoById',
         args:[videoId]
     }), '*');
-}
-commentsbtn.addEventListener('click', function () {
+}commentsbtn.addEventListener('click', function () {
     homevis.style.display = "none"
     aboutvis.style.display = "none"
     projectsvis.style.display = "none"
