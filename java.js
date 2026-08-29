@@ -20,15 +20,7 @@ function vibin(videoId){
         func: 'loadVideoById',
         args:[videoId]
     }), '*');
-}commentsbtn.addEventListener('click', function () {
-    homevis.style.display = "none"
-    aboutvis.style.display = "none"
-    projectsvis.style.display = "none"
-    aspvis.style.display = "none"
-    commentsvis.style.display = "block"
-    vibin("4s0VBDxeEXY")
-    //musica.src = "https://www.youtube.com/embed/4s0VBDxeEXY?enablejsapi=1&autoplay=1&loop=1&playlist=4s0VBDxeEXY";
-})
+}
 async function fetchComments() {
     const { data, error } = await yipee
         .from('comments')
