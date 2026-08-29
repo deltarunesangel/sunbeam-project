@@ -14,13 +14,13 @@ const commentsStream = document.getElementById("comments-stream");
 //     }
 
 // });
-function vibin(videoId){
-    musica.contentWindow.postMessage(JSON.stringify({
-        event:'command',
-        func: 'loadVideoById',
-        args:[videoId]
-    }), '*');
-}
+// function vibin(videoId){
+//     musica.contentWindow.postMessage(JSON.stringify({
+//         event:'command',
+//         func: 'loadVideoById',
+//         args:[videoId]
+//     }), '*');
+// }
 async function fetchComments() {
     const { data, error } = await yipee
         .from('comments')
