@@ -127,7 +127,48 @@
             background-attachment: fixed;
         }
         
+#comments-screen{
+  max-width:360px;
+  margin: 40px auto;
+  padding: 16px;
+  border: 1px solid rgba(0,200,255,0.3);
+  border-radius:10px;
+  z-index:5;
+}
+#comments-screen input,
+#comments-screen textarea {
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 8px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid rgba(0, 200, 255, 0.4);
+  background: rgba(0, 0, 0, 0.2);
+  color: inherit;
+  font-family: inherit;
+   z-index:5;
+}
 
+#comments-screen button {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  background: rgba(0, 200, 255, 0.6);
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 12px;
+   z-index:5;
+}
+
+#comments-screen button:hover {
+  background: rgba(0, 200, 255, 0.8);
+}
+
+#comments-stream {
+  max-height: 250px;
+  overflow-y: auto;
+}
         
     </style>
 </head>
