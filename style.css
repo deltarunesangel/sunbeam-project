@@ -1,20 +1,16 @@
+@import url('https://googleapis.com');
 .happy-monkey-regular {
-  font-family: "Happy Monkey", system-ui;
-  font-weight: 400;
-  font-style: normal;
+  font-family: "Happy Monkey", system-ui; 
+  font-weight: 400; font-style: normal;
 }
-
-/* img {
-  width: 200 px;
-} */
 h1 {
-  font-family: verdana;
+  font-family: verdana; 
   color: yellow;
-  -webkit-text-stroke: 1px lightblue; /* Thickness and color of outline */
+  -webkit-text-stroke: 1px lightblue;
 }
 p {
   font-family: "Happy Monkey";
 }
-a {
+a { 
   font-family: "Happy Monkey";
 }
