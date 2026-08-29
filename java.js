@@ -14,7 +14,6 @@ const commentsStream = document.getElementById("comments-stream");
 //     }
 
 // });
-});
 function vibin(videoId){
     musica.contentWindow.postMessage(JSON.stringify({
         event:'command',
